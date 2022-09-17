@@ -30,7 +30,7 @@ export default function PdfViewerComponent(props) {
                 document: props.document,
                 customFonts: customFontsRef.current,
                 // Use the public directory URL as a base URL. PSPDFKit will download its library assets from here.
-                baseUrl: `${window.location.protocol}//${window.location.host}/${process.env.PUBLIC_URL}`
+                baseUrl: `${window.location.protocol}//${window.location.host}/${process.env.PUBLIC_URL}/`
             });
             const item = {
                 type: "custom",
